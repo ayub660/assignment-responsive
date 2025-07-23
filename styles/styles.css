@@ -96,8 +96,10 @@ background-color: #f4f7fc;
 /*  */
 
 .card{
+    /* display: flex; */
     /* text-align: center; */
     /* align-items: center; */
+    
 }
 .btn{
     background: #E95A08;
