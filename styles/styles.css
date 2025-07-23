@@ -1,0 +1,31 @@
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+
+
+}
+.nav-link{
+    display: flex;
+    
+  
+}
+.nav-link li:nth-child(2) a,
+.nav-link li:nth-child(3) a,
+.nav-link li:nth-child(4) a{
+    color: #8987A1;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 25px;
+    
+}
+.nav-link a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #252432;
+}
