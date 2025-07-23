@@ -1,5 +1,15 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+background-color: #f4f7fc;
+}
 
 
+/* navbar  */
 .navbar{
     display: flex;
     align-items: center;
@@ -28,4 +38,90 @@
     text-decoration: none;
     font-weight: 500;
     color: #252432;
+}
+/* Banner section */
+
+/* Orange color */
+.highlight{
+    color: #E95A08;
+}
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: center; */
+    padding: 50px;
+}
+.banner-left h1{
+    font-family: "Noto Serif", serif;
+    font-size: 65px;
+    font-weight: 700;
+}
+.banner-left p{
+    font-family: "Inter", sans-serif;
+    color: #00000080;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+/* our plants  */
+
+
+.our-plants .content{
+    text-align: center;
+    width: 888px;
+    height: 54;
+    margin: 0 auto;
+    padding: 60px 20px;
+    
+}
+.our-plants h1{
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.our-plants p{
+    font-family: "Inter", sans-serif;
+    color:#00000080;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* card section */
+/*  */
+
+.card{
+    /* text-align: center; */
+    /* align-items: center; */
+}
+.btn{
+    background: #E95A08;
+    position: static;
+    width: 270px;
+    height: 50px;
+ }
+ .card img{
+    height: 322.94px;
+    width: 270;
+ }
+.card-name{
+
+    color: #111111;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+   
+  }
+.card-price{
+    color: #111111;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
 }
