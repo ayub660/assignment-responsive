@@ -2,27 +2,38 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 body{
 background-color: #f4f7fc;
 }
 
+/* .container{ */
+
+    /* padding: 0 20px; */
+
+}
+
 
 /* navbar  */
+nav{
+
+}
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
+     max-width: 1140px;
+    height: 71px;
+    margin: 30px auto;
 
 
 }
 .nav-link{
     display: flex;
-    
-  
-}
+    align-items: center;
+ }
 .nav-link li:nth-child(2) a,
 .nav-link li:nth-child(3) a,
 .nav-link li:nth-child(4) a{
@@ -39,31 +50,57 @@ background-color: #f4f7fc;
     font-weight: 500;
     color: #252432;
 }
+nav-link .cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #252432;
+}
+
+
+
+
 /* Banner section */
 
 /* Orange color */
+
 .highlight{
     color: #E95A08;
 }
 
 
 .banner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* text-align: center; */
-    padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1140px;
+  margin: 0 auto;
+   padding: 50px 0;
+   min-height: 355px;
 }
+
+
 .banner-left h1{
     font-family: "Noto Serif", serif;
     font-size: 65px;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .banner-left p{
     font-family: "Inter", sans-serif;
     color: #00000080;
     font-size: 22px;
     font-weight: 400;
+    
+}
+.banner-right img{
+    width: 570px;
+    height: 355px;
+    display: block;
 }
 
 
@@ -198,71 +235,82 @@ background-color: #f4f7fc;
 }
 
 
-/* three pic section */
-.three-pic-section {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 60px;
-  padding: 20px;
-  
-}
-.left-side {
-  
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.left-side .box h2 {
-    font-family: "Noto Serif", serif;
-  font-size: 28px;
-  font-weight: 600;
-  height: 27px;
-}
-.right-side {
-  display: flex;
-  align-items: center;
-  color: #000000;
-  
-}
 
-.box {
-  width: 366px;
-  height: 206px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.4),url(../assets/deal-zabo.png);
-  
+/* .three-pic-section { */
+
+.three-pic-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 85px;
+    width: 1140px;  
+  }
+
+.box-bg{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../assets/deal-bloom.png);
+    width: 366.22px;
+    height: 206px;
 }
-.big {
-  width: 753px;
-  height: 423px;
-  background: rgba(0, 0, 0, 0.4),url(../assets/deal-zabo.png);
+.box-bg-ana{
+     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../assets/deal-ana.png);
+     width: 366.22px;
+    height: 206px;
+}
+.box-big-zabo{
+     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../assets/deal-zabo.png);
+     width: 753px;
+     height: 430.13px;
+  }
+ 
+.box-bg, 
+.box-bg-ana, 
+.box-big-zabo{
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* flex: 1; */
+     margin-left: 20px;
+}
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+
 }
 .box h2 {
-  margin: 0;
   font-size: 40px;
-  width: 700;
-  color: #FFFFFF;
+  /* font-weight: 800; */
+  /* width: 700px; */
+  
+ }
+.box p, 
+.zabo-shop{
+    font-family: "Inter", sans-serif;
+    margin: 5px 0 0;
+    font-weight: 600;
+    height: 20px;
+    font-size: 20px;
+  }
+  .box-big-zabo{
+    font-size: 40px;
+  font-weight: 700;
   font-family: "Noto Serif", serif;
-
-}
-.box p {
-  margin: 5px 0 0;
-  font-weight: 600;
-  height: 20px;
-  font-size: 28x;
-  text-transform: uppercase;
-}
+  }
 
 
 
@@ -367,3 +415,234 @@ background-color: #f4f7fc;
     width: 30px;
     height: 30px;
 }
+
+
+
+/* MObile resonsive */
+@media (max-width: 768px){
+    h1{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+   .nav-link li:not(.cart) {
+    display: none;
+  }
+  .navbar {
+    height: auto;
+    padding: 10px 20px;
+  }
+  .logo {
+   width: 63px;
+   height: 38px;
+}
+
+/*   banner   */
+.banner {
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .banner-right {
+    order: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+   }
+  .banner-right img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: block;
+  }
+  .banner-left {
+    order: 1;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .banner-left h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .banner-left p {
+    font-size: 18px;
+    color: #000000cc;
+    margin-top: 0;
+  }
+
+                /* Our palnt card section */
+.our-plants .content {
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .our-plants h1{
+    font-size: 25px;
+  }
+  
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 10px;
+    justify-items: center;
+  }
+  .card img {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 270px;
+  }
+/* <!-- /Flower & Plants Lover --> */
+
+.flower {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .sample-flower-img {
+    width: 100%;
+    height: auto;
+  }
+  .sample-flower-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .flower-feature {
+    width: 100%;
+    text-align: left; 
+    padding: 0;
+  }
+  .flower-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .flower-description {
+    font-size: 18px;
+     padding-left: 20px;
+  }
+
+  .flower-description li {
+    margin-bottom: 10px;
+  }
+
+  /* Latest deal  */
+  .latest-deal {
+ text-align: center;
+}
+ 
+.three-pic-section {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    margin-top: 100px;
+  }
+   .three-pic-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .box-bg,
+  .box-bg-ana,
+  .box-big-zabo {
+    width: 100%;
+    height: 200px;
+    /* max-width: 400px; */
+    background-size: cover;
+    background-position: center;
+  }
+  .latest-deal p {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 90%;
+  
+}
+  .box-big-zabo h2 {
+    font-size: 24px; 
+  }
+  /* news letter  */
+  .subscribe-section {
+        height: auto; 
+        padding: 40px 20px; 
+  }
+  .subscribe-content {
+        max-width: 100%;  
+        width: 100%;
+        padding: 20px; 
+    }
+    .subscribe-content h2 {
+        font-size: 28px; 
+        margin-bottom: 20px;  
+    }
+   
+
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    
+  }
+  .footer-left,
+  .footer-center, {
+    width: 100%;
+    /* justify-content: flex-start; */
+    margin-bottom: 20px;
+  }
+  .footer-right {
+        width: 100%;
+        justify-content: flex-start; 
+        margin-top: 20px;
+        margin-left: 0;
+    }
+  .footer-center {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer-center ul {
+    gap: 10px;
+  }
+   .footer-right {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .footer-right img {
+   margin-right: 10px;
+   margin-bottom: 10px;
+  }
+  .footer-container p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .footer-center li a {
+        font-size: 14px;
+    }
+    .footer-center ul {
+        gap: 16px; 
+    }
+    .footer-left img {
+        width: 150px; 
+        height: auto;
+    }
+   
+
+
+
+}
+
+
